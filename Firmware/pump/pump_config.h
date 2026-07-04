@@ -32,6 +32,23 @@ typedef struct
 
 } PumpConfig_t;
 
+typedef enum
+{
+    PUMP_PH_UP,
+    PUMP_PH_DOWN,
+    PUMP_NUTRIENT_A,
+    PUMP_NUTRIENT_B,
+    PUMP_NUTRIENT_C,
+    PUMP_NUTRIENT_D,
+    PUMP_NUTRIENT_E,
+    PUMP_NUTRIENT_F,
+    PUMP_WATER_FILL,
+    PUMP_DRAIN,
+    PUMP_COUNT
+
+} PumpId_t;
+
+
 /******************************************************************************
  * Public API
  ******************************************************************************/

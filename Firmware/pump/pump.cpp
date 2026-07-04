@@ -2,6 +2,7 @@
  * File        : pump.cpp
  * Description : Generic Pump Driver
  * Project     : Smart Hydroponics Controller
+ * Authour     : Sudeep Mullaguri 
  ******************************************************************************/
 
 #include "pump.h"

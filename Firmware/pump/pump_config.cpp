@@ -28,23 +28,55 @@ static const PumpConfig_t g_pumpConfig[PUMP_COUNT] =
         .activeHigh = true,
         .name       = "pH Down"
     },
+     /* PUMP_NUTRIENT_A */
+    {
+        .gpio       = RELAY_PH_DOWN_PIN,
+        .enabled    = true,
+        .activeHigh = true,
+        .name       = "Nutrient A"
+    },
+     /* PUMP_NUTRIENT_B */
+    {
+        .gpio       = RELAY_PH_DOWN_PIN,
+        .enabled    = true,
+        .activeHigh = true,
+        .name       = "Nutrient B"
+    },
+     /* PUMP_NUTRIENT_C */
+    {
+        .gpio       = RELAY_PH_DOWN_PIN,
+        .enabled    = true,
+        .activeHigh = true,
+        .name       = "Nutrient C"
+    },
+    
+    
 
-    /* PUMP_NUTRIENT_A */
+    /* PUMP_NUTRIENT_D */
 
     {
         .gpio       = RELAY_NUTRIENT_A_PIN,
         .enabled    = true,
         .activeHigh = true,
-        .name       = "Nutrient A"
+        .name       = "Nutrient D"
     },
 
-    /* PUMP_NUTRIENT_B */
+    /* PUMP_NUTRIENT_E */
 
     {
         .gpio       = RELAY_NUTRIENT_B_PIN,
         .enabled    = true,
         .activeHigh = true,
-        .name       = "Nutrient B"
+        .name       = "Nutrient E"
+    },
+    
+        /* PUMP_NUTRIENT_F */
+
+    {
+        .gpio       = RELAY_NUTRIENT_B_PIN,
+        .enabled    = true,
+        .activeHigh = true,
+        .name       = "Nutrient F"
     },
 
     /* PUMP_WATER_FILL */

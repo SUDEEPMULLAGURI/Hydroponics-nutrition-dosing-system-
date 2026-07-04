@@ -38,6 +38,11 @@ extern "C" {
 
 #define RELAY_NUTRIENT_A_PIN       18
 #define RELAY_NUTRIENT_B_PIN       19
+#define RELAY_NUTRIENT_C_PIN       19
+#define RELAY_NUTRIENT_D_PIN       19
+#define RELAY_NUTRIENT_E_PIN       19
+#define RELAY_NUTRIENT_F_PIN       19
+
 
 #define RELAY_WATER_PUMP_PIN       21
 #define RELAY_DRAIN_PUMP_PIN       22
