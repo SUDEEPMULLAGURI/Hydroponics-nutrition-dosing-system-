@@ -3,12 +3,13 @@
 
 /******************************************************************************
  * File        : storage_object_table.h
- * Description : Storage Object Definitions
- * Project     : Hydroponic Nutrient Dosing Controller
+ * Description : Storage Object Table
+ * Project     : Smart Hydroponics Controller
  * Author      : Sudeep Mullaguri
  ******************************************************************************/
 
 #include <stdint.h>
+#include <stdbool.h>
 
 #include "storage_keys.h"
 
@@ -18,7 +19,7 @@ extern "C"
 #endif
 
 /******************************************************************************
- * Storage Object Descriptor
+ * Storage Object Information
  ******************************************************************************/
 
 typedef struct
@@ -29,7 +30,13 @@ typedef struct
 
     const char *objectName;
 
-    uint32_t maxSize;
+    uint32_t maximumSize;
+
+    bool enableCRC;
+
+    bool enableBackup;
+
+    bool encrypted;
 
 } StorageObjectInfo_t;
 
@@ -41,7 +48,7 @@ extern const StorageObjectInfo_t
 g_storageObjectTable[STORAGE_KEY_COUNT];
 
 /******************************************************************************
- * Public API
+ * Public Functions
  ******************************************************************************/
 
 const StorageObjectInfo_t*
